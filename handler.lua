@@ -20,11 +20,10 @@ function UriRate:access(conf)
 
 
     -- 如果不在白名单中，直接返回
-    if not num then
-        headers = headers or {}
+    if not findNum then
+        headers = {}
         headers['content-type'] = "application/json;charset=utf-8"
-
-        return kong.response.error(429, "API rate limit exceeded 123", headers)
+        return kong.response.exit(429,'{"status":1,"message":"频率超限","values":{}}',headers)
     end
 
 

@@ -6,15 +6,15 @@
 local typedefs = require "kong.db.schema.typedefs"
 
 return {
-    name = "lufeijun-uri-rate",
+    name = "uri-rate",
     fields = {
         { consumer = typedefs.no_consumer  },
         {
             config = {
-                type = "allow_uri",
+                type = "record",
                 fields = {
                     {
-                        header_name = { type = "string", required = true },
+                        allow_uri = { type = "string", required = true },
                     },
                 },
             },
