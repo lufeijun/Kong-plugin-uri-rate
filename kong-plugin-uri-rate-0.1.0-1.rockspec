@@ -6,7 +6,7 @@ local pluginName = package:match("^kong%-plugin%-(.+)$")
 supported_platforms = {"linux"}
 source = {
   url = "git@github.com:lufeijun/Kong-plugin-uri-rate.git",
-  tag = "0.1.0"
+  tag = "0.1.0-1"
 }
 
 description = {
