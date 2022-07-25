@@ -41,7 +41,7 @@ package-version.rockspec
 
 ### 2、安装路径
 
-* rockspec 中的 buil.minstall.bin 可以指定安装路径
+* 如果没有指定，luarocks path 结果中 LUA_PATH 参数
 
 
 ### 参考
